@@ -1,0 +1,60 @@
+#works.container {
+    margin: 4rem 1.5rem 0rem;
+}
+
+#works .heading {
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+#works h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 900;
+    color: #8c8c8c;
+}
+
+#works span {
+    height: 1.1px;
+    right: 0;
+    position: absolute;
+    width: 90%;
+    background-color: #d1d1d1;
+    display: block;
+}
+
+#works .card-container {
+    flex: 1;
+    width: 100%;
+}
+
+#works .card-wrapper {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 90%;
+}
+
+#works .card-box {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1.25rem;
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
+    width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+    #works h3 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    #works .card-box {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

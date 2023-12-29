@@ -1,0 +1,126 @@
+.navbar {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  top: 0;
+  padding: 1.25rem;
+  z-index: 30;
+}
+
+.scrolled {
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  outline: none;
+  border: none;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.navbar.scrolled .logo-text,
+.navbar.scrolled .nav-link,
+.navbar.scrolled .menu-icon {
+  color: #000;
+}
+
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  margin-left: 2.75rem;
+  outline: none;
+  border: none;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+}
+
+.nav-list {
+  list-style: none;
+  margin-left: 2.75rem;
+  align-items: center;
+  display: flex;
+}
+
+.nav-list.open {
+  right: 0;
+}
+
+.nav-item {
+  margin-left: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link:hover {
+  color: #2A1AD8;
+}
+
+.navbar.scrolled .nav-link:hover {
+  color: #2A1AD8;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    height: 100vh;
+    background-color: transparent;
+  }
+
+  .nav-item {
+    margin: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar.scrolled .nav-list.open {
+    background-color: white;
+  }
+}

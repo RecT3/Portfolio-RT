@@ -1,0 +1,81 @@
+#skills.container {
+    margin: 4rem 1.5rem 0rem;
+}
+
+#skills .title {
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+#skills h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 900;
+    color: #8c8c8c;
+}
+
+#skills span {
+    height: 1.1px;
+    right: 0;
+    position: absolute;
+    width: 90%;
+    background-color: #d1d1d1;
+    display: block;
+}
+
+#skills .content {
+    display: flex;
+}
+
+#skills .left-box {
+    flex: 1;
+    width: 100%;
+}
+
+#skills .progress {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+#skills .progress-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 75%;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+#skills .right-box {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills .first2,
+#skills .last2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Layout adjustment for smaller screens */
+@media (max-width: 768px) {
+    #skills .content {
+        flex-direction: column;
+    }
+
+    #skills .progress {
+        justify-content: center;
+    }
+
+    #skills .progress-bars {
+        width: 90%;
+    }
+}
