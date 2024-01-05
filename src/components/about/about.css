@@ -6,7 +6,7 @@
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   padding-top: 4rem;
-  height: 750px;
+  height: 650px;
   display: flex;
 }
 
@@ -31,14 +31,14 @@
 
 #home .img-container {
   position: relative;
-  height: 85%;
+  height: 100%;
   width: fit-content;
   display: flex;
   align-items: center;
 }
 
 #home .img {
-  height: 90%;
+  height: 85%;
   width: 100%;
   object-fit: cover;
 }

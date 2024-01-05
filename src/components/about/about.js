@@ -5,7 +5,7 @@ import { FiDownload } from "react-icons/fi";
 import { TypeAnimation } from "react-type-animation";
 import resumePDF from "../../assets/Resume.pdf";
 import "./about.css";
-//import background from "../../images/background.png";
+import background from "../../images/background.png";
 
 const About = () => {
   return (
@@ -58,7 +58,7 @@ const About = () => {
         <div className="right-container">
           <div className="img-container">
             <img
-              src="https://avatars.githubusercontent.com/u/52717664?v=4" //insert background when ready
+              src={background}
               alt="Ryan Taylor"
               className="img"
             />
