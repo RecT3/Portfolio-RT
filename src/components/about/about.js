@@ -40,18 +40,26 @@ const About = () => {
           </div>
           <div className="icons">
             <ul className="social-icons">
+              <li>
                 <a href="https://github.com/RecT3">
                   <AiFillGithub className="icon" />
                 </a>
+              </li>
+              <li>
                 <a href="https://www.linkedin.com/in/ryan-ec-taylor/">
                   <FaLinkedinIn className="icon" />
                 </a>
+              </li>
+              <li>
                 <a href="https://www.instagram.com/ryanectaylor/">
                   <AiFillInstagram className="icon" />
                 </a>
+              </li>
+              <li>
                 <a href="https://www.facebook.com/ryanectaylor/">
                   <FaFacebook className="icon" />
                 </a>
+              </li>
             </ul>
           </div>
         </div>

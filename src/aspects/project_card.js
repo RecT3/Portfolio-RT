@@ -36,10 +36,10 @@ const data = [
   {
     id: 4,
     img: Quikbook,
-    title: "Quikbook",
-    link: "",
+    title: "Quickbook by American Airlines",
+    link: "https://cea.howard.edu/articles/howard-university-computer-science-students-named-winning-team-8th-annual-black-enterprise",
     git: "",
-    desc: "Placed 3rd at the BE Smart Hackathon with this project. Quikbook streamlined the rebooking of flights and hotels, without the need for a customer service representative. Made with American Airlines' Flight Engine API, Node.js, and React.",
+    desc: "Placed 3rd at the BE Smart Hackathon with this project. Quickbook streamlined the rebooking of flights and hotels, without the need for a customer service representative. Made with American Airlines' Flight Engine API, Node.js, and React.",
   },
 ];
 
@@ -69,7 +69,7 @@ const ProjectCard = () => {
                   {data.link && (
                       <Link to={data.link} target="_blank" className="button">
                         <RxExternalLink className="project-icon" />
-                        <p className="button-text">Demo</p>
+                        <p className="button-text"> {data.id === "4" ? "Demo" : "Article" }</p>
                       </Link>
                   )}
                   {data.git && (
