@@ -9,7 +9,7 @@ const ProgressBar = ({ logo, name, value, duration = 3 }) => {
         <p className="label">
           {logo} {name}
         </p>
-        <p className="percent-value"> {value}%</p>
+        {/* <p className="percent-value"> {value}%</p> */} {/* commented out to remove percent value */}
       </div>
       <div className="progress-bar">
         <Progress

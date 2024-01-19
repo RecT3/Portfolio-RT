@@ -16,7 +16,7 @@ const About = () => {
             <h2 className="heading">Hello, I am Ryan Taylor</h2>
             <TypeAnimation
               sequence={[
-                "Software Developer", 2000, ""
+                "Software Developer", 2000, "Entrepenuer", 2000, "Student", 2000, "",
               ]}
               speed={30}
               wrapper="h2"
