@@ -1,5 +1,5 @@
 #home.about {
-  background: linear-gradient(90deg, #2A1AD8, #B948FF);
+  background: linear-gradient(90deg, #2a1ad8, #b948ff);
 }
 
 #home .container {
@@ -34,12 +34,13 @@
   width: fit-content;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 5rem;
 }
 
 #home .img {
-  height: 90%;
-  width: 100%;
+  height: 100%;
+  width: 80%;
   object-fit: cover;
 }
 
@@ -64,7 +65,7 @@
 #home .sub-heading {
   font-size: 2.25rem;
   font-weight: bold;
-  color: #B948FF;
+  color: #b948ff;
 }
 
 #home .description {
@@ -95,7 +96,7 @@
 }
 
 #home .download-link:hover {
-  color: #B948FF;
+  color: #b948ff;
 }
 
 #home .icons {
@@ -164,6 +165,7 @@
 
   #home .img {
     height: 95%;
+    width: 52%;
     margin-top: 1.5rem;
   }
 }
